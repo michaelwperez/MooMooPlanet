@@ -468,6 +468,8 @@ public class ShapesManager : MonoBehaviour
     private GameObject GetBonusFromType(string type)
     {
         string color = type.Split('_')[1].Trim();
+		print("color is " + color);
+
         foreach (var item in BonusPrefabs)
         {
             if (item.GetComponent<Shape>().Type.Contains(color))
